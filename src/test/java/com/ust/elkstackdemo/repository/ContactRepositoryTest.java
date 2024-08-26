@@ -187,7 +187,7 @@ class ContactRepositoryTest {
     }
 
     @Test
-    @DisplayName("Addition:Get contacts by phone number > 10")
+    @DisplayName("Additional:Get contacts by phone number greater than 10 digits")
     void getContactByPhoneNumber_WithGreaterThan10Digits() {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () ->
         {
