@@ -185,6 +185,16 @@ class ContactRepositoryTest {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> contactRepository.getContactsByName(""));
         assertEquals("Name is null or empty.", exception.getMessage());
     }
+
+    @Test
+    @DisplayName("Addition:Get contacts by phone number > 10")
+    void getContactByPhoneNumber_WithGreaterThan10Digits() {
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () ->
+        {
+            contactRepository.getContactsByPhoneNumber("12345678911");
+        });
+        assertEquals("Invalid phone number",exception.getMessage());
+    }
 }
 
 
