@@ -4,6 +4,7 @@ import com.ust.elkstackdemo.model.Contact;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
@@ -47,7 +48,7 @@ class ContactRepositoryTest {
     @Test
     @DisplayName("Add contact with null phone number should throw exception")
     void addContact_WithNullPhoneNumber_ShouldThrowException() {
-        Contact contact = new Contact("John Doe","john.doe@example.com", null );
+        Contact contact = new Contact("John Doe", "john.doe@example.com", null);
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> contactRepository.addContact(contact));
         assertEquals("Contact phone number is empty", exception.getMessage());
     }
@@ -55,7 +56,7 @@ class ContactRepositoryTest {
     @Test
     @DisplayName("Add contact with empty phone number should throw exception")
     void addContact_WithEmptyPhoneNumber_ShouldThrowException() {
-        Contact contact = new Contact("John Doe","john.doe@example.com", "" );
+        Contact contact = new Contact("John Doe", "john.doe@example.com", "");
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> contactRepository.addContact(contact));
         assertEquals("Contact phone number is empty", exception.getMessage());
     }
@@ -63,7 +64,7 @@ class ContactRepositoryTest {
     @Test
     @DisplayName("Add contact with existing contact should throw exception")
     void addContact_WithExistingContact_ShouldThrowException() {
-        Contact contact = new Contact("John Doe", "1234567890", "john.doe@example.com");
+        Contact contact = new Contact("John Doe", "john.doe@example.com", "1234567890");
         contactRepository.addContact(contact);
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> contactRepository.addContact(contact));
         assertEquals("Contact already exists", exception.getMessage());
@@ -79,8 +80,8 @@ class ContactRepositoryTest {
     @Test
     @DisplayName("Get contacts with contacts should return all contacts")
     void getContacts_WithContacts_ShouldReturnAllContacts() {
-        Contact contact1 = new Contact("John Doe", "1234567890", "john.doe@example.com");
-        Contact contact2 = new Contact("Jane Doe", "0987654321", "jane.doe@example.com");
+        Contact contact1 = new Contact("John Doe", "john.doe@example.com", "1234567890");
+        Contact contact2 = new Contact("Jane Doe", "jane.doe@example.com", "0987654321");
         contactRepository.addContact(contact1);
         contactRepository.addContact(contact2);
         List<Contact> contacts = contactRepository.getContacts();
@@ -92,7 +93,7 @@ class ContactRepositoryTest {
     @Test
     @DisplayName("Get contacts by phone number with existing phone number should return contact")
     void getContactsByPhoneNumber_WithExistingPhoneNumber_ShouldReturnContact() {
-        Contact contact = new Contact("John Doe",  "john.doe@example.com","1234567890");
+        Contact contact = new Contact("John Doe", "john.doe@example.com", "1234567890");
         contactRepository.addContact(contact);
         List<Contact> contacts = contactRepository.getContactsByPhoneNumber("1234567890");
         assertEquals(1, contacts.size());
@@ -126,20 +127,20 @@ class ContactRepositoryTest {
     @Test
     @DisplayName("Remove contact by phone number with existing phone number should remove contact")
     void removeContactByPhoneNumber_WithExistingPhoneNumber_ShouldRemoveContact() {
-        Contact contact = new Contact("John Doe", "john.doe@example.com","1234567890");
+        Contact contact = new Contact("John Doe", "john.doe@example.com", "1234567890");
         contactRepository.addContact(contact);
         contactRepository.removeContactByPhoneNumber("1234567890");
         List<Contact> contacts = contactRepository.getContacts();
         assertTrue(contacts.isEmpty());
     }
 
-//
-//    @Test
-//    @DisplayName("Remove contact by phone number with non-existing phone number should throw exception")
-//    void removeContactByPhoneNumber_WithNonExistingPhoneNumber_ShouldThrowException() {
-//        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> contactRepository.removeContactByPhoneNumber("0000000000"));
-//        assertEquals("Invalid phone number", exception.getMessage());
-//    }
+
+    @Test
+    @DisplayName("Remove contact by phone number with non-existing phone number should throw exception")
+    void removeContactByPhoneNumber_WithNonExistingPhoneNumber_ShouldThrowException() {
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> contactRepository.removeContactByPhoneNumber("0000000000"));
+        assertEquals("Invalid phone number", exception.getMessage());
+    }
 
     @Test
     @DisplayName("Remove contact by phone number with longer phone number should throw exception")
@@ -168,28 +169,29 @@ class ContactRepositoryTest {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> contactRepository.getContactsByPhoneNumber("abc123"));
         assertEquals("Phone number is not a number", exception.getMessage());
     }
-}
 
-//    @Test
-//    @DisplayName("Get contacts by name with null name should throw exception")
-//    void getContactsByName_WithNullName_ShouldThrowException() {
-//        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> contactRepository.getContactsByName(null));
-//        assertEquals("Name is null or empty", exception.getMessage());
-//    }
-//
-//    @Test
-//    @DisplayName("Get contacts by name with empty name should throw exception")
-//    void getContactsByName_WithEmptyName_ShouldThrowException() {
-//        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> contactRepository.getContactsByName(""));
-//        assertEquals("Name is null or empty", exception.getMessage());
-//    }
-//}
+
+    @Test
+    @DisplayName("Get contacts by name with null name should throw exception")
+    void getContactsByName_WithNullName_ShouldThrowException() {
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> contactRepository.getContactsByName(null));
+        assertEquals("Name is null or empty.", exception.getMessage());
+    }
+
+
+    @Test
+    @DisplayName("Get contacts by name with empty name should throw exception")
+    void getContactsByName_WithEmptyName_ShouldThrowException() {
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> contactRepository.getContactsByName(""));
+        assertEquals("Name is null or empty.", exception.getMessage());
+    }
+}
 
 
 /**
  * Test cases to be generated
  *
- * 1. addContact_WithValidContact_ShouldAddContact
+ * 1. addContact_WithValidContact_ShouldAddContact done
  * 2. addContact_WithNullName_ShouldThrowException
  * 3. addContact_WithEmptyName_ShouldThrowException
  * 4. addContact_WithNullPhoneNumber_ShouldThrowException

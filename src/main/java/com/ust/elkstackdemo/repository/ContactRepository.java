@@ -121,7 +121,8 @@ public class ContactRepository {
         var removed = contacts.removeIf(c -> c.getPhoneNumber().equals(phoneNumber));
         if (!removed) {
             LOGGER.warn("No contact with phone number: {}", phoneNumber);
-            return;
+             throw new IllegalArgumentException("Invalid phone number");
+
         }
         LOGGER.debug("Contact removed by phone number: {}", phoneNumber);
     }
