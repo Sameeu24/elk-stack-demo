@@ -348,3 +348,28 @@
 2024-08-26T14:15:17.675+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
 2024-08-26T14:15:17.676+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact name is empty
 2024-08-26T14:15:17.748+05:30 DEBUG 7560 --- [elk-stack-demo] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@69c43e48, started on Mon Aug 26 14:15:15 IST 2024
+2024-08-26T16:55:54.217+05:30  INFO 24132 --- [elk-stack-demo] [main] c.u.e.controller.ContactControllerTest   : Starting ContactControllerTest using Java 22.0.2 with PID 24132 (started by 285568 in C:\Users\285568\Desktop\Training\Springboot\testCaseTask\elk-stack-demo)
+2024-08-26T16:55:54.218+05:30 DEBUG 24132 --- [elk-stack-demo] [main] c.u.e.controller.ContactControllerTest   : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-08-26T16:55:54.219+05:30  INFO 24132 --- [elk-stack-demo] [main] c.u.e.controller.ContactControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T16:55:54.234+05:30 DEBUG 24132 --- [elk-stack-demo] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3dddbe65
+2024-08-26T16:55:55.688+05:30 DEBUG 24132 --- [elk-stack-demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2024-08-26T16:55:55.783+05:30 DEBUG 24132 --- [elk-stack-demo] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-26T16:55:55.826+05:30 DEBUG 24132 --- [elk-stack-demo] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-26T16:55:55.869+05:30 DEBUG 24132 --- [elk-stack-demo] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-26T16:55:55.924+05:30  INFO 24132 --- [elk-stack-demo] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-08-26T16:55:55.925+05:30  INFO 24132 --- [elk-stack-demo] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-08-26T16:55:55.926+05:30  INFO 24132 --- [elk-stack-demo] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-08-26T16:55:55.989+05:30  INFO 24132 --- [elk-stack-demo] [main] c.u.e.controller.ContactControllerTest   : Started ContactControllerTest in 2.208 seconds (process running for 3.078)
+2024-08-26T16:55:56.086+05:30 DEBUG 24132 --- [elk-stack-demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ust.elkstackdemo.controller.ContactController#getContacts()
+2024-08-26T16:55:56.104+05:30 DEBUG 24132 --- [elk-stack-demo] [main] c.u.e.controller.ContactController       : Getting all contacts
+2024-08-26T16:55:56.106+05:30 DEBUG 24132 --- [elk-stack-demo] [main] c.u.e.controller.ContactController       : No contacts found
+2024-08-26T16:55:56.124+05:30 DEBUG 24132 --- [elk-stack-demo] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2024-08-26T16:55:56.149+05:30 DEBUG 24132 --- [elk-stack-demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ust.elkstackdemo.controller.ContactController#getContacts()
+2024-08-26T16:55:56.151+05:30 DEBUG 24132 --- [elk-stack-demo] [main] c.u.e.controller.ContactController       : Getting all contacts
+2024-08-26T16:55:56.158+05:30 DEBUG 24132 --- [elk-stack-demo] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-08-26T16:55:56.158+05:30 DEBUG 24132 --- [elk-stack-demo] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.ust.elkstackdemo.model.Contact@38de5daf]]
+2024-08-26T16:55:56.256+05:30 DEBUG 24132 --- [elk-stack-demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.ust.elkstackdemo.controller.ContactController#addContact(Contact)
+2024-08-26T16:55:56.285+05:30 DEBUG 24132 --- [elk-stack-demo] [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.ust.elkstackdemo.model.Contact@203765b2]
+2024-08-26T16:55:56.291+05:30 DEBUG 24132 --- [elk-stack-demo] [main] c.u.e.controller.ContactController       : Adding contact with name: John Doe, email: john.doe, phoneNumber: 1234567890
+2024-08-26T16:55:56.294+05:30 DEBUG 24132 --- [elk-stack-demo] [main] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2024-08-26T16:55:56.308+05:30 DEBUG 24132 --- [elk-stack-demo] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@3dddbe65, started on Mon Aug 26 16:55:54 IST 2024
