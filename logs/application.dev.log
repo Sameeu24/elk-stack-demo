@@ -274,3 +274,77 @@
 2024-08-26T12:08:32.991+05:30 DEBUG 14428 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
 2024-08-26T12:08:32.992+05:30  WARN 14428 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact name is empty
 2024-08-26T12:08:33.002+05:30 DEBUG 14428 --- [elk-stack-demo] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6de54b40, started on Mon Aug 26 12:08:31 IST 2024
+2024-08-26T14:14:52.144+05:30  INFO 3344 --- [elk-stack-demo] [main] c.u.e.ElkStackDemoApplication            : Starting ElkStackDemoApplication using Java 22.0.2 with PID 3344 (C:\Users\285568\Desktop\Training\Springboot\testCaseTask\elk-stack-demo\target\classes started by 285568 in C:\Users\285568\Desktop\Training\Springboot\testCaseTask\elk-stack-demo)
+2024-08-26T14:14:52.146+05:30 DEBUG 3344 --- [elk-stack-demo] [main] c.u.e.ElkStackDemoApplication            : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-08-26T14:14:52.147+05:30  INFO 3344 --- [elk-stack-demo] [main] c.u.e.ElkStackDemoApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T14:14:53.057+05:30  INFO 3344 --- [elk-stack-demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8000 (http)
+2024-08-26T14:14:53.068+05:30  INFO 3344 --- [elk-stack-demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T14:14:53.069+05:30  INFO 3344 --- [elk-stack-demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-08-26T14:14:53.125+05:30  INFO 3344 --- [elk-stack-demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T14:14:53.125+05:30  INFO 3344 --- [elk-stack-demo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 926 ms
+2024-08-26T14:14:53.166+05:30 DEBUG 3344 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:14:53.260+05:30 DEBUG 3344 --- [elk-stack-demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-08-26T14:14:53.317+05:30 DEBUG 3344 --- [elk-stack-demo] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-26T14:14:53.340+05:30 DEBUG 3344 --- [elk-stack-demo] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-26T14:14:53.366+05:30 DEBUG 3344 --- [elk-stack-demo] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-26T14:14:53.428+05:30  INFO 3344 --- [elk-stack-demo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8000 (http) with context path '/'
+2024-08-26T14:14:53.436+05:30  INFO 3344 --- [elk-stack-demo] [main] c.u.e.ElkStackDemoApplication            : Started ElkStackDemoApplication in 1.781 seconds (process running for 2.159)
+2024-08-26T14:15:15.622+05:30  INFO 7560 --- [elk-stack-demo] [main] c.u.e.ElkStackDemoApplicationTests       : Starting ElkStackDemoApplicationTests using Java 21.0.2 with PID 7560 (started by 285568 in C:\Users\285568\Desktop\Training\Springboot\testCaseTask\elk-stack-demo)
+2024-08-26T14:15:15.623+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.ElkStackDemoApplicationTests       : Running with Spring Boot v3.3.3, Spring v6.1.12
+2024-08-26T14:15:15.624+05:30  INFO 7560 --- [elk-stack-demo] [main] c.u.e.ElkStackDemoApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T14:15:15.650+05:30 DEBUG 7560 --- [elk-stack-demo] [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@69c43e48
+2024-08-26T14:15:16.265+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:16.521+05:30 DEBUG 7560 --- [elk-stack-demo] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-08-26T14:15:16.585+05:30 DEBUG 7560 --- [elk-stack-demo] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-08-26T14:15:16.619+05:30 DEBUG 7560 --- [elk-stack-demo] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-08-26T14:15:16.648+05:30 DEBUG 7560 --- [elk-stack-demo] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-08-26T14:15:16.722+05:30  INFO 7560 --- [elk-stack-demo] [main] c.u.e.ElkStackDemoApplicationTests       : Started ElkStackDemoApplicationTests in 1.374 seconds (process running for 2.382)
+2024-08-26T14:15:17.598+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.601+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact phone number is empty
+2024-08-26T14:15:17.604+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.607+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : No contacts with phone number: 0000000000
+2024-08-26T14:15:17.612+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.614+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Invalid phone number: 12345678901
+2024-08-26T14:15:17.618+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.619+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : No contacts in repository
+2024-08-26T14:15:17.622+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.624+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact added: com.ust.elkstackdemo.model.Contact@77aea
+2024-08-26T14:15:17.627+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.628+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Invalid phone number: null
+2024-08-26T14:15:17.630+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.631+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact phone number is empty
+2024-08-26T14:15:17.634+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.635+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : No contacts with name: Non Existing
+2024-08-26T14:15:17.637+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.638+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Phone number is not a number: abc123
+2024-08-26T14:15:17.640+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.640+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact added: com.ust.elkstackdemo.model.Contact@1304e0d7
+2024-08-26T14:15:17.641+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact already exists: com.ust.elkstackdemo.model.Contact@1304e0d7
+2024-08-26T14:15:17.643+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.644+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Name is null or empty
+2024-08-26T14:15:17.646+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.647+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact name is empty
+2024-08-26T14:15:17.648+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.649+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact added: com.ust.elkstackdemo.model.Contact@433ef204
+2024-08-26T14:15:17.649+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact added: com.ust.elkstackdemo.model.Contact@4dd2ef54
+2024-08-26T14:15:17.651+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.652+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact added: com.ust.elkstackdemo.model.Contact@795b66d
+2024-08-26T14:15:17.655+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.655+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact added: com.ust.elkstackdemo.model.Contact@359ceb13
+2024-08-26T14:15:17.657+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.658+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Name is null or empty
+2024-08-26T14:15:17.659+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.660+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Invalid phone number: null
+2024-08-26T14:15:17.661+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.662+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Invalid phone number: 12345678911
+2024-08-26T14:15:17.664+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.665+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : No contact with phone number: 0000000000
+2024-08-26T14:15:17.667+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.668+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Phone number is not a number: abc123
+2024-08-26T14:15:17.671+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.672+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact added: com.ust.elkstackdemo.model.Contact@5b0902b4
+2024-08-26T14:15:17.673+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact removed by phone number: 1234567890
+2024-08-26T14:15:17.673+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : No contacts in repository
+2024-08-26T14:15:17.675+05:30 DEBUG 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : ContactRepository initialized
+2024-08-26T14:15:17.676+05:30  WARN 7560 --- [elk-stack-demo] [main] c.u.e.repository.ContactRepository       : Contact name is empty
+2024-08-26T14:15:17.748+05:30 DEBUG 7560 --- [elk-stack-demo] [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@69c43e48, started on Mon Aug 26 14:15:15 IST 2024

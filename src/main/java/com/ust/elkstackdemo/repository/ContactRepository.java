@@ -31,12 +31,12 @@ public class ContactRepository {
             throw new IllegalArgumentException("Contact name is empty");
         }
         if (contact.getPhoneNumber() == null || contact.getPhoneNumber().isEmpty()) {
-            LOGGER.warn("Contact phone number is empty");
+            LOGGER.warn("Contact phone numbezr is empty");
             throw new IllegalArgumentException("Contact phone number is empty");
         }
         contacts.stream()
                 .filter(c ->    c.getName().equals(contact.getName()) &&
-                                c.getPhoneNumber().equals(contact.getPhoneNumber()) &&
+//                                c.getPhoneNumber().equals(contact.getPhoneNumber()) &&
                                 c.getEmail().equals(contact.getEmail())
                 )
                 .findAny()

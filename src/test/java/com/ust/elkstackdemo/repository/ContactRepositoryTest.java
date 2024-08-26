@@ -195,6 +195,16 @@ class ContactRepositoryTest {
         });
         assertEquals("Invalid phone number",exception.getMessage());
     }
+
+@Test
+@DisplayName("Additional:Get contacts by phone number null")
+    void getContactByPhoneNumber_WithNullPhoneNumber() {
+    IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () ->
+    {
+        contactRepository.getContactsByPhoneNumber(null);
+    });
+    assertEquals("Invalid phone number",exception.getMessage());
+}
 }
 
 
